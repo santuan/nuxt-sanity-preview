@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="flex flex-col PlugBlockeditorGrillaDoble md:flex-row">
-      <div class="flex flex-col items-start justify-center w-full bg-gray-100">
-        <h2 class="p-3 text-4xl font-bold md:px-12 md:py-0">
+      <div class="flex flex-col items-start justify-center w-full p-3 bg-gray-100 md:px-12 md:py-0">
+        <h2 class="text-4xl font-bold ">
           {{ props?.heading }}
         </h2>
         <div class="prose">

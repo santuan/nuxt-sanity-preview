@@ -1,19 +1,22 @@
 <template>
   <div class="w-full bg-gray-100">
-    <div class="w-full max-w-full mx-auto prose bg-white">
-      <h1>{{ pageData?.data?.value?.title }}</h1>
-      <pre>Slug: {{ $route.params.slug[0] }}</pre>
-      <p>{{ pageData?.data?.value?.description }}</p>
-      <SanityContent
-        :blocks="pageData?.data?.value?.content"
-        :serializers="serializers"
-      />
+    <div
+      class="w-full max-w-full py-24 mx-auto prose text-white bg-gradient-to-br from-pink-600 to-indigo-600"
+    >
+      <div class="max-w-2xl mx-auto">
+        <h1 class="text-white">{{ pageData?.data?.value?.title }}</h1>
+        <pre>Slug: {{ $route.params.slug[0] }}</pre>
+        <p>{{ pageData?.data?.value?.description }}</p>
+      </div>
     </div>
+    <SanityContent
+      :blocks="pageData?.data?.value?.content"
+      :serializers="serializers"
+    />
   </div>
 </template>
 
 <script setup>
-
 definePageMeta({
   layout: "app",
 });

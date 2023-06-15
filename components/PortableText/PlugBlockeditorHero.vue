@@ -1,17 +1,14 @@
 <template>
-  <div>
-    <div class="flex flex-col PlugBlockeditorGrillaDoble md:flex-row">
-      <div class="flex flex-col items-start justify-center w-full bg-gray-100">
-        <h2 class="p-3 text-4xl font-bold md:px-12 md:py-0">
-          {{ props?.heading }}
-        </h2>
-        <!-- <div class="prose">
-          <SanityContent :blocks="props?.body" />
-        </div> -->
-      </div>
-      <!-- <div class="relative w-full overflow-hidden">
-        <PortableTextGalleryFour :imagesGallery="props?.imagesGallery"/>
-      </div> -->
+  <div
+    class="relative flex flex-col items-center justify-center pt-32 pb-32 overflow-hidden bg-red-600 PlugBlockeditorHero bg-gradient-to-tr from-red-400"
+  >
+    <h1
+      class="relative z-10 font-sans text-4xl text-white md:text-6xl animate__fadeIn animate__animated"
+    >
+      {{ props?.heading }}
+    </h1>
+    <div class="relative z-10 prose prose-xl prose-invert">
+      <SanityContent :blocks="props?.body" />
     </div>
   </div>
 </template>

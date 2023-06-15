@@ -1,28 +1,7 @@
 <template>
-  <div class="relative z-10 max-w-screen-sm">
+  <div class="relative z-10 max-w-6xl mx-auto mt-24">
     <p class="fVeafc in">
-      Hi {{ user?.email }}
-      <button @click="logout" class="ieMfVH" :disabled="loading">
-        <span class="fKlELC" :class="{ loading: loading }"> Log out </span>
-        <svg
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="jjoFVh"
-          :class="{ loading: loading }"
-        >
-          <g
-            fill="none"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            class="faEWLr"
-            style="stroke: var(--icon-color)"
-          >
-            <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
-            <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
-          </g>
-        </svg>
-      </button>
+      Hola {{ user?.email }}
     </p>
     <h1 class="kKxhrq">Cantera Preview</h1>
     <div class="uQxNj">
@@ -32,8 +11,6 @@
       <NuxtLink class="ieMfVH" to="/app/quienes-somos">
         <span class="fKlELC"> Quienes somos </span>
       </NuxtLink>
-    </div>
-    <div class="uQxNj">
       <NuxtLink
         v-for="item in data"
         :key="item.id"

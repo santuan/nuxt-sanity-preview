@@ -3,7 +3,7 @@
       <div
         class="relative z-50 w-full mx-auto DaoRb max-w-75"
       >
-        <h1 class="eSHwvX">Sign in</h1>
+        <h1 class="eSHwvX">Cantera Preview</h1>
         <form @submit.prevent="login">
           <ErrorAlert :error-msg="authError" @clearError="clearError" />
           <div class="jGQTZC">
@@ -30,7 +30,7 @@
           </div>
           <div class="jGQTZC">
             <button class="gZMQdu" type="submit" :disabled="loading">
-              <div class="bjhGPG" :class="{ loading: loading }">Sign in</div>
+              <div class="bjhGPG" :class="{ loading: loading }">Ingresar</div>
               <svg
                 viewBox="0 0 16 16"
                 fill="none"
@@ -77,7 +77,7 @@ const login = async () => {
   });
   if (error) {
     loading.value = false;
-    authError.value = "Invalid login credentials";
+    authError.value = "Credenciales inválidas";
     setTimeout(() => {
       authError.value = "";
     }, 5000);
