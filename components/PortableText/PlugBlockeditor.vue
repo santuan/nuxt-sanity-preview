@@ -6,5 +6,4 @@
 
 <script setup>
 const props = defineProps(["heading", "body"]);
-console.log(props);
 </script>
